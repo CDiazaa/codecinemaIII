@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCinema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">CODECINEMA </a>
+                <form class="d-flex" role="search">
+                    <div class="favB" id="toggleFavorites">
+                        <i class="bi bi-person-heart mfavorite"></i>
+                    </div>
+                    <input class="form-control me-2" id="busqueda" type="search" placeholder="Buscar"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" id="busquedaB" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="favorites-panel" id="favoritesPanel" style="display:none;">
+            <div class="favorites-content">
+            </div>
+        </div>
+
+        <div class="contslider">
+            <div class="slider" id="slider">
+                <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/joker2.jpg" class="d-block w-100" alt="JokerFolieaDeux">
+                            <div class="moviepie">
+                                <p class="movtitlecar">
+                                    <a class="movielink" href="https://youtu.be/xy8aJw1vYHo?si=lyog3ENf3E4mh83W"
+                                        target="_blank">
+                                        <i class="bi biplay bi-play-btn"></i>
+                                    </a>
+                                    'Joker: Folie à Deux'
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/if.jpg" class="d-block w-100" alt="If">
+                            <div class="moviepie">
+                                <p class="movtitlecar">
+                                    <a class="movielink" href="https://youtu.be/mb2187ZQtBE?si=lEUQ6uhK5sIVCsYn"
+                                        target="_blank">
+                                        <i class="bi biplay bi-play-btn"></i>
+                                    </a>
+                                    'If'
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/outerrange.jpg" class="d-block w-100" alt="OuterRange">
+                            <div class="moviepie">
+                                <p class="movtitlecar">
+                                    <a class="movielink" href="https://youtu.be/8UkDdTMZh14?si=2th64waj0xrKXxMX"
+                                        target="_blank">
+                                        <i class="bi biplay bi-play-btn"></i>
+                                    </a>
+                                    'Outer Range'
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/flymetothemoon.jpg" class="d-block w-100" alt="FlyMeToTheMoon">
+                            <div class="moviepie">
+                                <p class="movtitlecar">
+                                    <a class="movielink" href="https://youtu.be/lW7enw6mFxs?si=hI4ZzHI_moawT9Y6"
+                                        target="_blank">
+                                        <i class="bi biplay bi-play-btn"></i>
+                                    </a>
+                                    'Fly Me To The Moon'
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/darkmatter.jpg" class="d-block w-100" alt="DarkMatter">
+                            <div class="moviepie">
+                                <p class="movtitlecar">
+                                    <a class="movielink" href="https://youtu.be/j6ucGt_Xp14?si=br88kGkrFBL78zui"
+                                        target="_blank">
+                                        <i class="bi biplay bi-play-btn"></i>
+                                    </a>
+                                    'Dark Matter'
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" id="btnCarousel" type="button"
+                        data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" id="btnCarousel" type="button"
+                        data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="textcontainer">
+                <h1 class="titletext"><b>Películas en tendencia</b></h1>
+                <p class="sndtext">
+                    <b>Sigue</b> lo que ves. <br>
+                    <b>Descubre</b> nuevos programas y películas. <br>
+                    Recibe <b>notificaciones de episodios.</b> <br>
+                    Obtén recomendaciones <b>personalizadas.</b>
+                </p>
+                <div class="centerregisbtn">
+                    <button class="regisBtn animate__animated animate__flash animate__delay-1s animate__slow"
+                        id="regisBtn">Registrate gratis</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grayscreen">
+            <div class="contenregis">
+                <form id="form" action="#">
+                    <div class="login-form">
+                        <div class="titlediv">
+                            <div class="close">
+                                <p class="pclose"><i id="close" class="bi bi-x-circle-fill"></i></p>
+                            </div>
+                            <p class="phrase1">Lo que está pasando ahora</p>
+                            <p class="phrase2">Únete hoy</p>
+
+                            <div class="input-boxes">
+                                <div class="input-box">
+                                    <input class="box" id="name" type="text" placeholder="Usuario">
+                                    <p class="alertname" id="alertname"></p>
+                                </div>
+                                <div class="input-box">
+                                    <input class="box" id="email" type="email" placeholder="E-mail">
+                                    <p class="alertemail" id="alertemail"></p>
+                                </div>
+                                <div class="input-box">
+                                    <input class="box" id="pass" type="password" placeholder="Contraseña">
+                                    <p class="alertpass" id="alertpass"></p>
+                                </div>
+                                <div class="buttoninput-box">
+                                    <button class="rButton" id="rButton" type="submit">Registrarse</button>
+                                </div>
+                                <p class="alertcheck" id="alertcheck"></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="contmovies" id="contmovies">
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="fcontainer">
+            <p class="copyright">
+                <a href="" target="_blank"><i class="bi bi-github"></i></a> <br>
+                2024 CODECINEMA. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
